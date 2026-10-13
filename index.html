@@ -28,7 +28,7 @@
   a { color:var(--accent); }
   .note { color:var(--muted); font-size:.82rem; margin-top:28px; }
   .ad { display:flex; overflow:hidden; margin:0 0 6px; border-radius:14px; color:#fff; text-decoration:none;
-        background:linear-gradient(115deg,#cd2e3a 0%,#a8324f 42%,#3a3f87 68%,#0047a0 100%); box-shadow:0 6px 18px rgba(0,40,100,.18); }
+        background:linear-gradient(160deg,#cd2e3a 0%,#cd2e3a 18%,#7a3570 50%,#0047a0 82%); box-shadow:0 6px 18px rgba(0,40,100,.18); }
   .ad .txt { flex:1 1 55%; padding:20px 20px 18px; }
   .ad .pic { flex:0 0 45%; min-height:190px; background:url(airshow.jpg) center/cover no-repeat;
              -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%); mask-image:linear-gradient(90deg,transparent 0,#000 22%); }
@@ -38,6 +38,7 @@
   .ad .h { font-size:.82rem; opacity:.88; margin-top:6px; }
   .ad .cta { display:inline-block; margin-top:12px; padding:6px 14px; border-radius:8px; background:#fff; color:#0047a0; font-weight:700; font-size:.85rem; }
   .ad:hover .cta { background:#fde8ea; color:#cd2e3a; }
+  .ad .nw { white-space:nowrap; }
   .credit { font-size:.7rem; color:var(--muted); margin:0 0 28px; text-align:right; }
   @media (max-width:520px) {
     .ad { flex-direction:column-reverse; }
@@ -52,7 +53,7 @@
     <div class="txt">
       <span class="tag">AD</span>
       <div class="t">2026 사천에어쇼</div>
-      <div class="d">10.22(목) ~ 10.25(일) · 경남 사천비행장 일원 · 입장 무료</div>
+      <div class="d"><span class="nw">10.22(목) ~ 10.25(일)</span> · <span class="nw">경남 사천비행장 일원</span> · <span class="nw">입장 무료</span></div>
       <div class="h">블랙이글스 · KF-21 비행 · 해외 곡예비행팀 · 고공강하 시범</div>
       <span class="cta">공식 홈페이지 바로가기 →</span>
     </div>
