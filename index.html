@@ -27,11 +27,28 @@
   li { margin:6px 0; }
   a { color:var(--accent); }
   .note { color:var(--muted); font-size:.82rem; margin-top:28px; }
+  .ad { display:block; position:relative; overflow:hidden; margin:0 0 28px; padding:20px 20px 18px; border-radius:14px; color:#fff; text-decoration:none;
+        background:linear-gradient(120deg,#0b2a5b 0%,#1557b0 55%,#4fa3e8 100%); }
+  .ad::after { content:"✈"; position:absolute; right:14px; top:50%; transform:translateY(-50%) rotate(-20deg); font-size:5.5rem; opacity:.18; }
+  .ad .tag { display:inline-block; font-size:.7rem; letter-spacing:.08em; background:rgba(255,255,255,.2); padding:2px 8px; border-radius:99px; }
+  .ad .t { font-size:1.35rem; font-weight:800; margin:8px 0 2px; }
+  .ad .d { font-size:.92rem; opacity:.92; }
+  .ad .h { font-size:.82rem; opacity:.8; margin-top:6px; }
+  .ad .cta { display:inline-block; margin-top:12px; padding:6px 14px; border-radius:8px; background:#fff; color:#0b2a5b; font-weight:700; font-size:.85rem; }
+  .ad:hover .cta { background:#ffe7d4; }
   @media (max-width:520px) { th:nth-child(1), td.cat { display:none; } }
 </style>
 </head>
 <body>
 <main>
+  <a class="ad" href="https://airshow.sacheon.go.kr" target="_blank" rel="noopener">
+    <span class="tag">AD</span>
+    <div class="t">2026 사천에어쇼</div>
+    <div class="d">10.22(목) ~ 10.25(일) · 경남 사천비행장 일원 · 입장 무료</div>
+    <div class="h">블랙이글스 · KF-21 비행 · 해외 곡예비행팀 · 고공강하 시범</div>
+    <span class="cta">공식 홈페이지 바로가기 →</span>
+  </a>
+
   <h1>PC 부품 최저가 견적</h1>
   <p class="sub">드래곤볼 Sparking! ZERO 1080p·60fps(높음) 기준 · 다나와 최저가 · 2026-10-13 조사</p>
 
