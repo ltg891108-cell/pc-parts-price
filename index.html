@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PC 부품 최저가</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --fg:#1d1d1f; --muted:#6b6b70; --line:#e3e3e0; --accent:#e8650a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141416; --card:#1e1e21; --fg:#ececec; --muted:#9a9aa0; --line:#2e2e33; --accent:#ff8a3d; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,"Segoe UI","Malgun Gothic",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 48px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.1rem; margin:32px 0 10px; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:.92rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  table { width:100%; border-collapse:collapse; font-size:.94rem; }
+  th, td { text-align:left; padding:10px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; font-size:.82rem; }
+  td.p { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  tr.total td { border-bottom:none; font-weight:700; font-size:1.05rem; }
+  tr.total td.p { color:var(--accent); }
+  .cat { color:var(--muted); white-space:nowrap; }
+  ul { padding-left:20px; margin:0; }
+  li { margin:6px 0; }
+  a { color:var(--accent); }
+  .note { color:var(--muted); font-size:.82rem; margin-top:28px; }
+  @media (max-width:520px) { th:nth-child(1), td.cat { display:none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>PC 부품 최저가 견적</h1>
+  <p class="sub">드래곤볼 Sparking! ZERO 1080p·60fps(높음) 기준 · 다나와 최저가 · 2026-10-13 조사</p>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>부품</th><th>제품</th><th style="text-align:right">최저가</th></tr></thead>
+      <tbody>
+        <tr><td class="cat">CPU</td><td>AMD 라이젠5 7500F</td><td class="p">171,370원</td></tr>
+        <tr><td class="cat">메인보드</td><td>GIGABYTE B650M K</td><td class="p">112,080원</td></tr>
+        <tr><td class="cat">RAM</td><td>타무즈 DDR5-5600 16GB × 2</td><td class="p">658,000원</td></tr>
+        <tr><td class="cat">그래픽카드</td><td>MSI RTX 5060 벤투스 2X OC D7 8GB</td><td class="p">668,590원</td></tr>
+        <tr><td class="cat">SSD</td><td>CRAS C910G 1TB NVMe</td><td class="p">287,980원</td></tr>
+        <tr><td class="cat">파워</td><td>오쓰 X 쿨러마스터 BRONZE 650 ATX3.1</td><td class="p">53,520원</td></tr>
+        <tr><td class="cat">케이스</td><td>마이크로닉스 COOLMAX 가성비 NO.2</td><td class="p">22,040원</td></tr>
+        <tr class="total"><td class="cat"></td><td>합계</td><td class="p">1,973,580원</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>참고</h2>
+  <div class="card">
+    <ul>
+      <li><b>게임 권장 사양</b>: i7-9700K / Ryzen 5 3600, RAM 16GB, RTX 2060, 29GB. 위 구성은 여유 있게 충족합니다.</li>
+      <li><b>CPU 쿨러</b>: 7500F는 쿨러 미포함일 수 있어 2~3만 원 추가 예상(미확인).</li>
+      <li><b>메모리 가격 급등</b>: 16GB 1개만 쓰면 약 <b>164만 원</b>. 16GB로도 게임은 충분하지만 듀얼채널(2개)이 성능상 유리합니다.</li>
+      <li><b>완제품 비교</b>: 다나와 "마이피씨샵 DIY 게이밍 마스터 7500F RTX5060"이 <b>1,492,890원</b>으로 직접 조립보다 저렴할 수 있습니다(RAM·SSD 용량 미확인).</li>
+    </ul>
+  </div>
+
+  <p class="note">
+    가격은 조사 시점 기준이며 변동될 수 있습니다. 구매 전 다시 확인하세요.<br>
+    출처: <a href="https://search.danawa.com/dsearch.php?query=RTX+5060+8GB">다나와 가격비교</a> ·
+    <a href="https://prod.danawa.com/list/?cate=11255834">다나와 게이밍PC</a> ·
+    <a href="https://www.dsogaming.com/news/dragon-ball-sparking-zero-official-pc-requirements/">DSOGaming (게임 사양)</a>
+  </p>
+</main>
+</body>
+</html>
